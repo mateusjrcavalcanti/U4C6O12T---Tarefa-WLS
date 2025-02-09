@@ -1,17 +1,3 @@
-/*
- * Por: Wilton Lacerda Silva
- *    Comunicação serial com I2C
- *  
- * Uso da interface I2C para comunicação com o Display OLED
- * 
- * Estudo da biblioteca ssd1306 com PicoW na Placa BitDogLab.
- *  
- * Este programa escreve uma mensagem no display OLED.
- * 
- * 
-*/
-
-
 #include <stdlib.h>
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
@@ -49,7 +35,7 @@ int main()
     ssd1306_rect(&ssd, 3, 3, 122, 58, cor, !cor); // Desenha um retângulo
     ssd1306_draw_string(&ssd, "CEPEDI   TIC37", 8, 10); // Desenha uma string
     ssd1306_draw_string(&ssd, "EMBARCATECH", 20, 30); // Desenha uma string
-    ssd1306_draw_string(&ssd, "PROF WILTON", 15, 48); // Desenha uma string      
+    ssd1306_draw_string(&ssd, "Aluno Mateus", 15, 48); // Desenha uma string      
     ssd1306_send_data(&ssd); // Atualiza o display
 
     sleep_ms(1000);
