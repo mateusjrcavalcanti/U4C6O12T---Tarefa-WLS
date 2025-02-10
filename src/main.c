@@ -21,7 +21,7 @@ typedef struct
 {
   char *estado_azul;
   char *estado_verde;
-  char caractere[2]; // Array de 2 caracteres
+  char caractere[2];
   bool fill;
   int numero_exibido;
 } estado_t;
